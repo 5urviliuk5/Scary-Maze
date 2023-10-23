@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    public AudioSource death;
+
     private void Update()
     {
         var mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -16,6 +18,7 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Wall"))
         {
+            death.Play();
             SceneManager.LoadScene("Menu");
         }
     }

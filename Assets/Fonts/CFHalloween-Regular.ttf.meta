@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad8a5761cde7a004995b2d92696f8102
+guid: f41878205c4772d4a8373df4f3a565f9
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Murva Demo
+  - CF Halloween
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
