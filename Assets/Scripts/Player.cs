@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public AudioSource death;
+    public AudioSource deathSound;
+
+    public GameObject retryButton;
+    public GameObject scarypic;
 
     private void Update()
     {
@@ -18,8 +20,9 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.name.Contains("Wall"))
         {
-            death.Play();
-            SceneManager.LoadScene("Menu");
+            deathSound.Play();
+            retryButton.SetActive(true);
+            scarypic.SetActive(true);
         }
     }
 }

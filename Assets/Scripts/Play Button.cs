@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayButton : MonoBehaviour
 {
+    public string nextLevelName;
+
     private void OnMouseDown()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(nextLevelName);
     }
 }
